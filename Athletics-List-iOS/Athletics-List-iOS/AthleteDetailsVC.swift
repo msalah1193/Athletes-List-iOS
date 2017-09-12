@@ -23,7 +23,9 @@ class AthleteDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageViewAthlete.sd_setImage(with: URL(string: stateCtrl.athlete.image))
+        imageViewAthlete.sd_setImage(with: URL(string: stateCtrl.athlete.image),
+                                     placeholderImage: #imageLiteral(resourceName: "ic_person_placeholder"))
+        
         labelAthleteName.text = stateCtrl.athlete.name
         textViewBrief.text = stateCtrl.athlete.brief
     }

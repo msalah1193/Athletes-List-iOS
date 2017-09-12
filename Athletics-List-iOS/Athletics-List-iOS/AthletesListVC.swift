@@ -45,7 +45,8 @@ class AthletesListVC: UIViewController {
         tableDS = TableDataSource(cellID: AthleteTableViewCell.CELL_ID, data: stateCtrl.athletes) {
             cell, model in
             
-            cell.imageViewAthlete.sd_setImage(with: URL(string: model.image))
+            cell.imageViewAthlete.sd_setImage(with: URL(string: model.image),
+                                              placeholderImage: #imageLiteral(resourceName: "ic_person_placeholder"))
             cell.labelAthleteName.text = model.name
         }
         
