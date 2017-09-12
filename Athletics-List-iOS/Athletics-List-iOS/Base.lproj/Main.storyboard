@@ -1,26 +1,163 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cBE-yi-hny">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Athletes ListVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AthletesListVC" customModule="Athletics_List_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ylD-fB-nDt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="athleteCell" rowHeight="79" id="dyf-CV-2Wg" customClass="AthleteTableViewCell" customModule="Athletics_List_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dyf-CV-2Wg" id="uwc-Is-qr4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i7x-Qo-Scj">
+                                                    <rect key="frame" x="8" y="8" width="63" height="63"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="63" id="Rfp-if-S28"/>
+                                                        <constraint firstAttribute="width" constant="63" id="dbX-Nm-8u2"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTU-Wn-2de">
+                                                    <rect key="frame" x="79" y="8" width="233" height="63"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i7x-Qo-Scj" firstAttribute="top" secondItem="uwc-Is-qr4" secondAttribute="top" constant="8" id="06g-8p-enn"/>
+                                                <constraint firstAttribute="bottom" secondItem="wTU-Wn-2de" secondAttribute="bottom" constant="7.5" id="3Fk-iG-ydt"/>
+                                                <constraint firstItem="wTU-Wn-2de" firstAttribute="top" secondItem="uwc-Is-qr4" secondAttribute="top" constant="8" id="SLq-Sl-Gs6"/>
+                                                <constraint firstItem="wTU-Wn-2de" firstAttribute="leading" secondItem="i7x-Qo-Scj" secondAttribute="trailing" constant="8" id="YQu-Eu-zOf"/>
+                                                <constraint firstAttribute="trailing" secondItem="wTU-Wn-2de" secondAttribute="trailing" constant="8" id="efv-4l-y9S"/>
+                                                <constraint firstItem="i7x-Qo-Scj" firstAttribute="leading" secondItem="uwc-Is-qr4" secondAttribute="leading" constant="8" id="n0f-V6-pWM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewAthlete" destination="i7x-Qo-Scj" id="5Zk-jK-Adg"/>
+                                            <outlet property="labelAthleteName" destination="wTU-Wn-2de" id="Vw0-qX-pWw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ylD-fB-nDt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9p8-un-nRi"/>
+                            <constraint firstItem="ylD-fB-nDt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NNJ-xs-TTG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ylD-fB-nDt" secondAttribute="bottom" id="VLE-AC-SGG"/>
+                            <constraint firstAttribute="trailing" secondItem="ylD-fB-nDt" secondAttribute="trailing" id="YT0-sg-4Mg"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9ZA-Eo-tBG"/>
+                    <connections>
+                        <outlet property="tableView" destination="ylD-fB-nDt" id="qw7-mL-OPO"/>
+                        <segue destination="W3F-PS-k7B" kind="show" identifier="fromHomeToDetails" id="vJ2-bw-Dir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1066.875" y="775.35211267605632"/>
+        </scene>
+        <!--Athlete DetailsVC-->
+        <scene sceneID="rrk-67-q1K">
+            <objects>
+                <viewController id="W3F-PS-k7B" customClass="AthleteDetailsVC" customModule="Athletics_List_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VRV-E0-dbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vre-om-pn5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GRx-Kh-9LU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Orm-MN-ib2">
+                                <rect key="frame" x="40" y="72" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ThG-HW-5Ra"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0Y-Al-suu">
+                                <rect key="frame" x="16" y="227" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="3XI-zf-qZG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L7F-Pu-zio">
+                                <rect key="frame" x="16" y="264" width="288" height="296"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Despite the fact that Title IX ensures female athletes receive the same opportunities as their male counterparts, there are still major discrepancies in pay, facilities and exposure. What’s more, female athletes often come of age discouraged by the prevalence of sexist phrases like “play like a girl,” and the awareness that most people in the sports world somehow expect less of them. So, when female athletes arise who not only challenge, but shatter stereotypes of what women can do, they captivate the entire world. This is a list of those extraordinary women. Jackie Joyner-Kersee is often referred to as the First Lady of American athletics. She competed in four Olympic Games for the United States from 1984 to 1996, earning medals in both the women’s heptathlon and the women’s long jump. When all was said and done, Joyner-Kersee earned an astounding three gold, one silver, and two bronze medals. Here, she jumps to her second gold medal in the Seoul Olympic women’s long jump final, September 19, 1988, setting a new Olympic record at 7.40.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t0Y-Al-suu" firstAttribute="top" secondItem="Orm-MN-ib2" secondAttribute="bottom" constant="27" id="BN4-Wv-8jB"/>
+                            <constraint firstItem="Vre-om-pn5" firstAttribute="top" secondItem="L7F-Pu-zio" secondAttribute="bottom" constant="8" id="Dbb-9N-wqs"/>
+                            <constraint firstItem="Orm-MN-ib2" firstAttribute="top" secondItem="VRV-E0-dbh" secondAttribute="bottom" constant="8" id="OcT-KN-XQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Orm-MN-ib2" secondAttribute="trailing" constant="24" id="WKJ-89-jR8"/>
+                            <constraint firstItem="t0Y-Al-suu" firstAttribute="leading" secondItem="GRx-Kh-9LU" secondAttribute="leadingMargin" id="cKW-1B-9FT"/>
+                            <constraint firstItem="t0Y-Al-suu" firstAttribute="trailing" secondItem="GRx-Kh-9LU" secondAttribute="trailingMargin" id="hdi-Ic-zba"/>
+                            <constraint firstItem="L7F-Pu-zio" firstAttribute="trailing" secondItem="GRx-Kh-9LU" secondAttribute="trailingMargin" id="lH6-E5-uNT"/>
+                            <constraint firstItem="L7F-Pu-zio" firstAttribute="leading" secondItem="GRx-Kh-9LU" secondAttribute="leadingMargin" id="rGQ-Ky-QgL"/>
+                            <constraint firstItem="L7F-Pu-zio" firstAttribute="top" secondItem="t0Y-Al-suu" secondAttribute="bottom" constant="8" id="tDD-Wt-g0b"/>
+                            <constraint firstItem="Orm-MN-ib2" firstAttribute="leading" secondItem="GRx-Kh-9LU" secondAttribute="leadingMargin" constant="24" id="zTZ-cZ-0PF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewAthlete" destination="Orm-MN-ib2" id="vdc-Ov-0TQ"/>
+                        <outlet property="labelAthleteName" destination="t0Y-Al-suu" id="kfg-JS-wp0"/>
+                        <outlet property="textViewBrief" destination="L7F-Pu-zio" id="4wV-zl-jPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqg-hm-NEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893.75" y="774.29577464788736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DYu-4i-I5Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cBE-yi-hny" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="htg-bo-8NA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ger-GK-mQy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cm-Dg-GLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
         </scene>
     </scenes>
 </document>

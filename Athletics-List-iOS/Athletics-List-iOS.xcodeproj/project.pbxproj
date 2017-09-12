@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6210F0C133AB168940BF7CD1 /* Pods_Athletics_List_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB419E56B826F5C4F5BE446A /* Pods_Athletics_List_iOS.framework */; };
+		C5BCCBDC1F67F015005D7664 /* AthletesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBDB1F67F015005D7664 /* AthletesListVC.swift */; };
+		C5BCCBDF1F67F0FB005D7664 /* AthletesListStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBDE1F67F0FB005D7664 /* AthletesListStateController.swift */; };
+		C5BCCBE21F67F2EE005D7664 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBE11F67F2EE005D7664 /* Athlete.swift */; };
+		C5BCCBE81F67F7A2005D7664 /* AppURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBE71F67F7A2005D7664 /* AppURL.swift */; };
+		C5BCCBEA1F67F974005D7664 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBE91F67F974005D7664 /* ErrorMessages.swift */; };
+		C5BCCBED1F67FA6E005D7664 /* AthleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBEC1F67FA6E005D7664 /* AthleteTableViewCell.swift */; };
+		C5BCCBF01F67FF74005D7664 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBEF1F67FF74005D7664 /* TableDataSource.swift */; };
+		C5BCCBF21F67FF94005D7664 /* TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBF11F67FF94005D7664 /* TableDelegate.swift */; };
+		C5BCCBFA1F6808E4005D7664 /* ALLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBF81F6808E4005D7664 /* ALLoadingView.swift */; };
+		C5BCCBFE1F680941005D7664 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCBFD1F680941005D7664 /* UIViewController+Extension.swift */; };
+		C5BCCC011F680AAD005D7664 /* AthleteDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCC001F680AAD005D7664 /* AthleteDetailsVC.swift */; };
+		C5BCCC031F680C8D005D7664 /* AthleteDetailsStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCC021F680C8D005D7664 /* AthleteDetailsStateController.swift */; };
+		C5BCCC051F680FD5005D7664 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BCCC041F680FD5005D7664 /* SweetAlert.swift */; };
 		C5EF12C21F67E91900B472D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF12C11F67E91900B472D4 /* AppDelegate.swift */; };
-		C5EF12C41F67E91900B472D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF12C31F67E91900B472D4 /* ViewController.swift */; };
 		C5EF12C71F67E91900B472D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EF12C51F67E91900B472D4 /* Main.storyboard */; };
 		C5EF12C91F67E91900B472D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EF12C81F67E91900B472D4 /* Assets.xcassets */; };
 		C5EF12CC1F67E91900B472D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EF12CA1F67E91900B472D4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45AD73E2B25228B7500132D8 /* Pods-Athletics-List-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletics-List-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Athletics-List-iOS/Pods-Athletics-List-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		93F077FB7E2EF6FB10688638 /* Pods-Athletics-List-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletics-List-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Athletics-List-iOS/Pods-Athletics-List-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C5BCCBDB1F67F015005D7664 /* AthletesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthletesListVC.swift; sourceTree = "<group>"; };
+		C5BCCBDE1F67F0FB005D7664 /* AthletesListStateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthletesListStateController.swift; sourceTree = "<group>"; };
+		C5BCCBE11F67F2EE005D7664 /* Athlete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		C5BCCBE71F67F7A2005D7664 /* AppURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURL.swift; sourceTree = "<group>"; };
+		C5BCCBE91F67F974005D7664 /* ErrorMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		C5BCCBEC1F67FA6E005D7664 /* AthleteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteTableViewCell.swift; sourceTree = "<group>"; };
+		C5BCCBEF1F67FF74005D7664 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		C5BCCBF11F67FF94005D7664 /* TableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDelegate.swift; sourceTree = "<group>"; };
+		C5BCCBF81F6808E4005D7664 /* ALLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALLoadingView.swift; sourceTree = "<group>"; };
+		C5BCCBFD1F680941005D7664 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C5BCCC001F680AAD005D7664 /* AthleteDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteDetailsVC.swift; sourceTree = "<group>"; };
+		C5BCCC021F680C8D005D7664 /* AthleteDetailsStateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteDetailsStateController.swift; sourceTree = "<group>"; };
+		C5BCCC041F680FD5005D7664 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		C5EF12BE1F67E91900B472D4 /* Athletics-List-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Athletics-List-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EF12C11F67E91900B472D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5EF12C31F67E91900B472D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5EF12C61F67E91900B472D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5EF12C81F67E91900B472D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5EF12CB1F67E91900B472D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5EF12CD1F67E91900B472D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB419E56B826F5C4F5BE446A /* Pods_Athletics_List_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athletics_List_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,143 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6210F0C133AB168940BF7CD1 /* Pods_Athletics_List_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1C6CC4B926BFD1C658D31A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F077FB7E2EF6FB10688638 /* Pods-Athletics-List-iOS.debug.xcconfig */,
+				45AD73E2B25228B7500132D8 /* Pods-Athletics-List-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5BCCBD81F67EB11005D7664 /* Assets and Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF12C81F67E91900B472D4 /* Assets.xcassets */,
+				C5EF12CD1F67E91900B472D4 /* Info.plist */,
+			);
+			name = "Assets and Configuration";
+			sourceTree = "<group>";
+		};
+		C5BCCBD91F67EB2B005D7664 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5EF12C51F67E91900B472D4 /* Main.storyboard */,
+				C5EF12CA1F67E91900B472D4 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C5BCCBDA1F67EB7F005D7664 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBEB1F67FA3E005D7664 /* Athletes List */,
+				C5BCCBFF1F680A82005D7664 /* Athlete Details */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C5BCCBDD1F67F0D5005D7664 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBDE1F67F0FB005D7664 /* AthletesListStateController.swift */,
+				C5BCCC021F680C8D005D7664 /* AthleteDetailsStateController.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		C5BCCBE01F67F2D5005D7664 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBE11F67F2EE005D7664 /* Athlete.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C5BCCBE31F67F6C4005D7664 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBF71F6808C8005D7664 /* ALLoadingView */,
+				C5BCCBFC1F680911005D7664 /* Extensions */,
+				C5BCCBEE1F67FF43005D7664 /* Generic Classes */,
+				C5BCCC061F680FE3005D7664 /* Sweet Alert */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C5BCCBE61F67F77A005D7664 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBE71F67F7A2005D7664 /* AppURL.swift */,
+				C5BCCBE91F67F974005D7664 /* ErrorMessages.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		C5BCCBEB1F67FA3E005D7664 /* Athletes List */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBDB1F67F015005D7664 /* AthletesListVC.swift */,
+				C5BCCBEC1F67FA6E005D7664 /* AthleteTableViewCell.swift */,
+			);
+			name = "Athletes List";
+			sourceTree = "<group>";
+		};
+		C5BCCBEE1F67FF43005D7664 /* Generic Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBEF1F67FF74005D7664 /* TableDataSource.swift */,
+				C5BCCBF11F67FF94005D7664 /* TableDelegate.swift */,
+			);
+			name = "Generic Classes";
+			sourceTree = "<group>";
+		};
+		C5BCCBF71F6808C8005D7664 /* ALLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBF81F6808E4005D7664 /* ALLoadingView.swift */,
+			);
+			name = ALLoadingView;
+			sourceTree = "<group>";
+		};
+		C5BCCBFC1F680911005D7664 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCBFD1F680941005D7664 /* UIViewController+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C5BCCBFF1F680A82005D7664 /* Athlete Details */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCC001F680AAD005D7664 /* AthleteDetailsVC.swift */,
+			);
+			name = "Athlete Details";
+			sourceTree = "<group>";
+		};
+		C5BCCC061F680FE3005D7664 /* Sweet Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C5BCCC041F680FD5005D7664 /* SweetAlert.swift */,
+			);
+			name = "Sweet Alert";
+			sourceTree = "<group>";
+		};
 		C5EF12B51F67E91800B472D4 = {
 			isa = PBXGroup;
 			children = (
 				C5EF12C01F67E91900B472D4 /* Athletics-List-iOS */,
 				C5EF12BF1F67E91900B472D4 /* Products */,
+				AC1C6CC4B926BFD1C658D31A /* Pods */,
+				E0E8C3FBE665A886B4073190 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +209,23 @@
 			isa = PBXGroup;
 			children = (
 				C5EF12C11F67E91900B472D4 /* AppDelegate.swift */,
-				C5EF12C31F67E91900B472D4 /* ViewController.swift */,
-				C5EF12C51F67E91900B472D4 /* Main.storyboard */,
-				C5EF12C81F67E91900B472D4 /* Assets.xcassets */,
-				C5EF12CA1F67E91900B472D4 /* LaunchScreen.storyboard */,
-				C5EF12CD1F67E91900B472D4 /* Info.plist */,
+				C5BCCBD81F67EB11005D7664 /* Assets and Configuration */,
+				C5BCCBE31F67F6C4005D7664 /* Helpers */,
+				C5BCCBE61F67F77A005D7664 /* Enums */,
+				C5BCCBE01F67F2D5005D7664 /* Model */,
+				C5BCCBDA1F67EB7F005D7664 /* View Controllers */,
+				C5BCCBDD1F67F0D5005D7664 /* View Model */,
+				C5BCCBD91F67EB2B005D7664 /* View */,
 			);
 			path = "Athletics-List-iOS";
+			sourceTree = "<group>";
+		};
+		E0E8C3FBE665A886B4073190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB419E56B826F5C4F5BE446A /* Pods_Athletics_List_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5EF12D01F67E91900B472D4 /* Build configuration list for PBXNativeTarget "Athletics-List-iOS" */;
 			buildPhases = (
+				C36B6186D7ECF045D4442A8A /* [CP] Check Pods Manifest.lock */,
 				C5EF12BA1F67E91800B472D4 /* Sources */,
 				C5EF12BB1F67E91800B472D4 /* Frameworks */,
 				C5EF12BC1F67E91800B472D4 /* Resources */,
+				37B3F31A64B1CB29171428A5 /* [CP] Embed Pods Frameworks */,
+				BE1E8C05C197413879D17CF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +298,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37B3F31A64B1CB29171428A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athletics-List-iOS/Pods-Athletics-List-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1E8C05C197413879D17CF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athletics-List-iOS/Pods-Athletics-List-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36B6186D7ECF045D4442A8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5EF12BA1F67E91800B472D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5EF12C41F67E91900B472D4 /* ViewController.swift in Sources */,
+				C5BCCBFE1F680941005D7664 /* UIViewController+Extension.swift in Sources */,
+				C5BCCBDC1F67F015005D7664 /* AthletesListVC.swift in Sources */,
+				C5BCCBED1F67FA6E005D7664 /* AthleteTableViewCell.swift in Sources */,
+				C5BCCBFA1F6808E4005D7664 /* ALLoadingView.swift in Sources */,
 				C5EF12C21F67E91900B472D4 /* AppDelegate.swift in Sources */,
+				C5BCCC051F680FD5005D7664 /* SweetAlert.swift in Sources */,
+				C5BCCBF01F67FF74005D7664 /* TableDataSource.swift in Sources */,
+				C5BCCBF21F67FF94005D7664 /* TableDelegate.swift in Sources */,
+				C5BCCC011F680AAD005D7664 /* AthleteDetailsVC.swift in Sources */,
+				C5BCCBEA1F67F974005D7664 /* ErrorMessages.swift in Sources */,
+				C5BCCC031F680C8D005D7664 /* AthleteDetailsStateController.swift in Sources */,
+				C5BCCBDF1F67F0FB005D7664 /* AthletesListStateController.swift in Sources */,
+				C5BCCBE21F67F2EE005D7664 /* Athlete.swift in Sources */,
+				C5BCCBE81F67F7A2005D7664 /* AppURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +487,7 @@
 		};
 		C5EF12D11F67E91900B472D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F077FB7E2EF6FB10688638 /* Pods-Athletics-List-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Athletics-List-iOS/Info.plist";
@@ -272,6 +500,7 @@
 		};
 		C5EF12D21F67E91900B472D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AD73E2B25228B7500132D8 /* Pods-Athletics-List-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Athletics-List-iOS/Info.plist";
@@ -301,6 +530,7 @@
 				C5EF12D21F67E91900B472D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
